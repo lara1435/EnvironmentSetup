@@ -7,6 +7,7 @@ protocol AuthenticationFlowCoordinatorDelegate: class {
 public final class AuthenticationFlowCoordinator: Coordinator {
     weak var delegate: AuthenticationFlowCoordinatorDelegate?
     let navigationController: UINavigationController
+    let authenticationFactory = AuthenticationFactory()
     
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -14,21 +15,34 @@ public final class AuthenticationFlowCoordinator: Coordinator {
     
     override public func start() {
         super.start()
-        showLoginViewController()
+        
+        let tag = 2
+        
+        switch tag {
+        case 0:
+            showSigInViewController()
+        case 1:
+            showSignUpViewController()
+        case 2:
+            showPasswordViewController()
+        default:
+            showSigInViewController()
+        }
+        
     }
     
-    func showLoginViewController() {
-        let signInViewController = AuthenticationFactory.signInViewControllerWithCoordinator(coordinator: self)
+    func showSigInViewController() {
+        let signInViewController = authenticationFactory.signInViewControllerWithCoordinator(coordinator: self)
         navigationController.show(signInViewController, sender: self)
     }
     
-    func showSignupViewController(){
-        let signupViewController = AuthenticationFactory.signUpViewControllerWithCoordinator(coordinator: self)
+    func showSignUpViewController(){
+        let signupViewController = authenticationFactory.signUpViewControllerWithCoordinator(coordinator: self)
         navigationController.show(signupViewController, sender: self)
     }
     
     func showPasswordViewController() {
-       let forgotPasswordViewController = AuthenticationFactory.forgotPasswordViewControllerWithCoordinator(coordinator: self)
+       let forgotPasswordViewController = authenticationFactory.forgotPasswordViewControllerWithCoordinator(coordinator: self)
         navigationController.show(forgotPasswordViewController, sender: self)
     }
 }
