@@ -28,8 +28,8 @@ public final class AuthenticationFlowCoordinator: Coordinator {
     }
     
     func showPasswordViewController() {
-       let resetPasswordViewController = AuthenticationFactory.forgotPasswordViewControllerWithCoordinator(coordinator: self)
-        navigationController.show(resetPasswordViewController, sender: self)
+       let forgotPasswordViewController = AuthenticationFactory.forgotPasswordViewControllerWithCoordinator(coordinator: self)
+        navigationController.show(forgotPasswordViewController, sender: self)
     }
 }
 

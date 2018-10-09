@@ -28,6 +28,7 @@
 		55B93C8C216AFF6C00E3A657 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B93C8B216AFF6C00E3A657 /* ForgotPasswordViewController.swift */; };
 		55B93C8E216AFFE000E3A657 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B93C8D216AFFE000E3A657 /* SignUpViewController.swift */; };
 		55B93C91216C6A2400E3A657 /* AuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B93C90216C6A2400E3A657 /* AuthenticationFactory.swift */; };
+		55B93C93216C72E300E3A657 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B93C92216C72E300E3A657 /* ProfileFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		55B93C8B216AFF6C00E3A657 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		55B93C8D216AFFE000E3A657 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		55B93C90216C6A2400E3A657 /* AuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFactory.swift; sourceTree = "<group>"; };
+		55B93C92216C72E300E3A657 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +138,10 @@
 		55B93C8A216AFF4900E3A657 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				55B93C86216A84C500E3A657 /* ProfileViewController.swift */,
 				55B93C84216A835600E3A657 /* signInViewController.swift */,
 				55B93C8D216AFFE000E3A657 /* SignUpViewController.swift */,
 				55B93C8B216AFF6C00E3A657 /* ForgotPasswordViewController.swift */,
+				55B93C86216A84C500E3A657 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				55B93C90216C6A2400E3A657 /* AuthenticationFactory.swift */,
+				55B93C92216C72E300E3A657 /* ProfileFactory.swift */,
 			);
 			path = ModuleFactories;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				55B93C4C216A184F00E3A657 /* AppDelegate.swift in Sources */,
 				55B93C73216A2F5E00E3A657 /* DevEndPoints.swift in Sources */,
 				55B93C75216A319700E3A657 /* InHouseEndPoints.swift in Sources */,
+				55B93C93216C72E300E3A657 /* ProfileFactory.swift in Sources */,
 				55B93C89216A866500E3A657 /* ProfileFlowCoordinator.swift in Sources */,
 				55B93C6E216A2E3900E3A657 /* URLManager.swift in Sources */,
 				55B93C77216A31A600E3A657 /* AppStoreEndPoints.swift in Sources */,

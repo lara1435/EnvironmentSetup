@@ -13,10 +13,10 @@ class AuthenticationFactory {
         return signupViewController
     }
     
-    static func forgotPasswordViewControllerWithCoordinator(coordinator: ResetPasswordViewControllerDelegate) -> ForgotPasswordViewController {
-        let resetPasswordViewController = ForgotPasswordViewController()
-        resetPasswordViewController.delegate = coordinator
-        return resetPasswordViewController
+    static func forgotPasswordViewControllerWithCoordinator(coordinator: ForgotPasswordViewControllerDelegate) -> ForgotPasswordViewController {
+        let forgotPasswordViewController = ForgotPasswordViewController()
+        forgotPasswordViewController.delegate = coordinator
+        return forgotPasswordViewController
     }
     
 }
