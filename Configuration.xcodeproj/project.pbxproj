@@ -35,6 +35,7 @@
 		7999E7C0216C9EC90055D21C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999E7BF216C9EC90055D21C /* SignUpViewModel.swift */; };
 		7999E7C2216C9ED40055D21C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999E7C1216C9ED40055D21C /* ForgotPasswordViewModel.swift */; };
 		7999E7C4216CA1A10055D21C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7999E7C3216CA1A10055D21C /* Profile.storyboard */; };
+		7999E7C9216CB53A0055D21C /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999E7C8216CB53A0055D21C /* RouteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		7999E7BF216C9EC90055D21C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		7999E7C1216C9ED40055D21C /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		7999E7C3216CA1A10055D21C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		7999E7C8216CB53A0055D21C /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				55B93C6B216A299400E3A657 /* BundleManager.swift */,
 				55B93C69216A273600E3A657 /* EnvironmentManager.swift */,
 				55B93C6D216A2E3900E3A657 /* URLManager.swift */,
+				7999E7C8216CB53A0055D21C /* RouteManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				55B93C6A216A273600E3A657 /* EnvironmentManager.swift in Sources */,
 				55B93C4C216A184F00E3A657 /* AppDelegate.swift in Sources */,
 				7999E7C0216C9EC90055D21C /* SignUpViewModel.swift in Sources */,
+				7999E7C9216CB53A0055D21C /* RouteManager.swift in Sources */,
 				55B93C73216A2F5E00E3A657 /* DevEndPoints.swift in Sources */,
 				7999E7B8216C93E10055D21C /* ViewModelable.swift in Sources */,
 				55B93C75216A319700E3A657 /* InHouseEndPoints.swift in Sources */,
