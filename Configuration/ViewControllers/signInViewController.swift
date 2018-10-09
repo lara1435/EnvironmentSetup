@@ -1,6 +1,8 @@
 import UIKit
 
 protocol SignInViewControllerDelegate: class {
+    func signUpButtonDidTap()
+    func forgotPasswordButtonDidTap()
 }
 
 class SignInViewController: UIViewController {
@@ -15,6 +17,14 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?.viewDidLoad()
+    }
+    
+    @IBAction func signUpButtonAction(_ sender: Any) {
+        delegate?.signUpButtonDidTap()
+    }
+    
+    @IBAction func forgotPasswordButtonAction(_ sender: Any) {
+        delegate?.forgotPasswordButtonDidTap()
     }
 }
 

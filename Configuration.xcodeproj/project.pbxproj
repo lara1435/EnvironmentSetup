@@ -101,16 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				55B93C4B216A184F00E3A657 /* AppDelegate.swift */,
-				7999E7B6216C93CC0055D21C /* ViewModel */,
 				55B93C8F216C69F500E3A657 /* ModuleFactories */,
-				55B93C8A216AFF4900E3A657 /* ViewControllers */,
 				55B93C7F216A7E7200E3A657 /* Coordinator */,
+				7999E7B6216C93CC0055D21C /* ViewModel */,
+				55B93C8A216AFF4900E3A657 /* ViewControllers */,
 				55B93C6F216A2EC700E3A657 /* EndPoints */,
 				55B93C78216A356F00E3A657 /* Managers */,
-				55B93C54216A185300E3A657 /* LaunchScreen.storyboard */,
-				7999E7BB216C9D070055D21C /* Authentication.storyboard */,
-				7999E7C3216CA1A10055D21C /* Profile.storyboard */,
-				55B93C52216A185300E3A657 /* Assets.xcassets */,
+				7999E7C5216CB0240055D21C /* Resources */,
 				55B93C57216A185300E3A657 /* Info.plist */,
 			);
 			path = Configuration;
@@ -140,8 +137,7 @@
 		55B93C7F216A7E7200E3A657 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				55B93C79216A771D00E3A657 /* Coordinatable.swift */,
-				55B93C7D216A7E2000E3A657 /* Coordinator.swift */,
+				7999E7C7216CB0780055D21C /* Commmon */,
 				55B93C80216A7ECD00E3A657 /* AppCoordinator.swift */,
 				55B93C82216A7FA300E3A657 /* AuthenticationFlowCoordinator.swift */,
 				55B93C88216A866500E3A657 /* ProfileFlowCoordinator.swift */,
@@ -179,6 +175,34 @@
 				7999E7C1216C9ED40055D21C /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7999E7C5216CB0240055D21C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7999E7C6216CB0330055D21C /* Storyboards */,
+				55B93C52216A185300E3A657 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7999E7C6216CB0330055D21C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55B93C54216A185300E3A657 /* LaunchScreen.storyboard */,
+				7999E7BB216C9D070055D21C /* Authentication.storyboard */,
+				7999E7C3216CA1A10055D21C /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7999E7C7216CB0780055D21C /* Commmon */ = {
+			isa = PBXGroup;
+			children = (
+				55B93C79216A771D00E3A657 /* Coordinatable.swift */,
+				55B93C7D216A7E2000E3A657 /* Coordinator.swift */,
+			);
+			path = Commmon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

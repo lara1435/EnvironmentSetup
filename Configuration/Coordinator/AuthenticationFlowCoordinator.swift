@@ -15,20 +15,7 @@ public final class AuthenticationFlowCoordinator: Coordinator {
     
     override public func start() {
         super.start()
-        
-        let tag = 2
-        
-        switch tag {
-        case 0:
-            showSigInViewController()
-        case 1:
-            showSignUpViewController()
-        case 2:
-            showPasswordViewController()
-        default:
-            showSigInViewController()
-        }
-        
+        showSigInViewController()
     }
     
     func showSigInViewController() {
@@ -48,6 +35,13 @@ public final class AuthenticationFlowCoordinator: Coordinator {
 }
 
 extension AuthenticationFlowCoordinator: SignInViewControllerDelegate {
+    func signUpButtonDidTap() {
+        showSignUpViewController()
+    }
+    
+    func forgotPasswordButtonDidTap() {
+        showPasswordViewController()
+    }
 }
 
 extension AuthenticationFlowCoordinator: SignUpViewControllerDelegate {
