@@ -14,7 +14,10 @@ class ProfileFactory {
     
     func profileViewControllerWithCoordinator(coordinator: ProfileViewControllerDelegate) -> ProfileViewController {
         let profileViewController = storyBoard.instantiateViewController(withIdentifier: ProfileIdentifiers.profile) as! ProfileViewController
-        let viewModel = ProfileViewModel()
+        let networkController = AFNetworkController()
+        let profileNetworkController = ProfileNetworkController(networkController: networkController)
+        let parser = CProfileParsar()
+        let viewModel = ProfileViewModel(networkController: profileNetworkController, parser: parser)
         profileViewController.configure(viewModel: viewModel)
         profileViewController.delegate = coordinator
         return profileViewController

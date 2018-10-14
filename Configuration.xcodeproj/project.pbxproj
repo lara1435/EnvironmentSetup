@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		443DBF4A21730A5100751E95 /* ProfileNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF4921730A5100751E95 /* ProfileNetworkController.swift */; };
+		443DBF4C21730A6500751E95 /* SessionNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF4B21730A6500751E95 /* SessionNetworkController.swift */; };
+		443DBF4E21730AC500751E95 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF4D21730AC500751E95 /* User.swift */; };
+		443DBF5021730ADA00751E95 /* ProfileConrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF4F21730ADA00751E95 /* ProfileConrollable.swift */; };
+		443DBF5221730B8700751E95 /* NetworkControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF5121730B8700751E95 /* NetworkControllable.swift */; };
+		443DBF5421730CE600751E95 /* ProfileParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF5321730CE600751E95 /* ProfileParsable.swift */; };
+		443DBF5821730D6A00751E95 /* OMProfileParsar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF5721730D6A00751E95 /* OMProfileParsar.swift */; };
+		443DBF5A21730E0D00751E95 /* AFNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF5921730E0D00751E95 /* AFNetworkController.swift */; };
+		443DBF5C217310DD00751E95 /* CProfileParsar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DBF5B217310DD00751E95 /* CProfileParsar.swift */; };
 		55B93C4C216A184F00E3A657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B93C4B216A184F00E3A657 /* AppDelegate.swift */; };
 		55B93C53216A185300E3A657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B93C52216A185300E3A657 /* Assets.xcassets */; };
 		55B93C56216A185300E3A657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B93C54216A185300E3A657 /* LaunchScreen.storyboard */; };
@@ -39,6 +48,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		443DBF4921730A5100751E95 /* ProfileNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNetworkController.swift; sourceTree = "<group>"; };
+		443DBF4B21730A6500751E95 /* SessionNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionNetworkController.swift; sourceTree = "<group>"; };
+		443DBF4D21730AC500751E95 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		443DBF4F21730ADA00751E95 /* ProfileConrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConrollable.swift; sourceTree = "<group>"; };
+		443DBF5121730B8700751E95 /* NetworkControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkControllable.swift; sourceTree = "<group>"; };
+		443DBF5321730CE600751E95 /* ProfileParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileParsable.swift; sourceTree = "<group>"; };
+		443DBF5721730D6A00751E95 /* OMProfileParsar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMProfileParsar.swift; sourceTree = "<group>"; };
+		443DBF5921730E0D00751E95 /* AFNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkController.swift; sourceTree = "<group>"; };
+		443DBF5B217310DD00751E95 /* CProfileParsar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CProfileParsar.swift; sourceTree = "<group>"; };
 		55B93C48216A184F00E3A657 /* Configuration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Configuration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B93C4B216A184F00E3A657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55B93C52216A185300E3A657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +101,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443DBF5D217311AC00751E95 /* NetworkControllers */ = {
+			isa = PBXGroup;
+			children = (
+				443DBF5F217311D000751E95 /* Common */,
+				443DBF4F21730ADA00751E95 /* ProfileConrollable.swift */,
+				443DBF4921730A5100751E95 /* ProfileNetworkController.swift */,
+			);
+			path = NetworkControllers;
+			sourceTree = "<group>";
+		};
+		443DBF5E217311B900751E95 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				443DBF60217311F500751E95 /* ProfileParser */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		443DBF5F217311D000751E95 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				443DBF5121730B8700751E95 /* NetworkControllable.swift */,
+				443DBF4B21730A6500751E95 /* SessionNetworkController.swift */,
+				443DBF5921730E0D00751E95 /* AFNetworkController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		443DBF60217311F500751E95 /* ProfileParser */ = {
+			isa = PBXGroup;
+			children = (
+				443DBF5321730CE600751E95 /* ProfileParsable.swift */,
+				443DBF5721730D6A00751E95 /* OMProfileParsar.swift */,
+				443DBF5B217310DD00751E95 /* CProfileParsar.swift */,
+			);
+			path = ProfileParser;
+			sourceTree = "<group>";
+		};
+		443DBF612173120C00751E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				443DBF4D21730AC500751E95 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		55B93C3F216A184F00E3A657 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				55B93C4B216A184F00E3A657 /* AppDelegate.swift */,
+				443DBF612173120C00751E95 /* Model */,
+				443DBF5E217311B900751E95 /* Parser */,
+				443DBF5D217311AC00751E95 /* NetworkControllers */,
 				55B93C8F216C69F500E3A657 /* ModuleFactories */,
 				55B93C7F216A7E7200E3A657 /* Coordinator */,
 				7999E7B6216C93CC0055D21C /* ViewModel */,
@@ -287,6 +354,7 @@
 				55B93C8C216AFF6C00E3A657 /* ForgotPasswordViewController.swift in Sources */,
 				55B93C7A216A771D00E3A657 /* Coordinatable.swift in Sources */,
 				55B93C8E216AFFE000E3A657 /* SignUpViewController.swift in Sources */,
+				443DBF5A21730E0D00751E95 /* AFNetworkController.swift in Sources */,
 				7999E7BA216C94410055D21C /* ProfileViewModel.swift in Sources */,
 				55B93C87216A84C500E3A657 /* ProfileViewController.swift in Sources */,
 				7999E7BE216C9EBE0055D21C /* SignInViewModel.swift in Sources */,
@@ -299,12 +367,20 @@
 				55B93C73216A2F5E00E3A657 /* DevEndPoints.swift in Sources */,
 				7999E7B8216C93E10055D21C /* ViewModelable.swift in Sources */,
 				55B93C75216A319700E3A657 /* InHouseEndPoints.swift in Sources */,
+				443DBF5021730ADA00751E95 /* ProfileConrollable.swift in Sources */,
 				55B93C93216C72E300E3A657 /* ProfileFactory.swift in Sources */,
+				443DBF4E21730AC500751E95 /* User.swift in Sources */,
 				55B93C89216A866500E3A657 /* ProfileFlowCoordinator.swift in Sources */,
 				55B93C6E216A2E3900E3A657 /* URLManager.swift in Sources */,
 				55B93C77216A31A600E3A657 /* AppStoreEndPoints.swift in Sources */,
 				55B93C7E216A7E2000E3A657 /* Coordinator.swift in Sources */,
+				443DBF5421730CE600751E95 /* ProfileParsable.swift in Sources */,
+				443DBF5821730D6A00751E95 /* OMProfileParsar.swift in Sources */,
+				443DBF4A21730A5100751E95 /* ProfileNetworkController.swift in Sources */,
 				55B93C6C216A299400E3A657 /* BundleManager.swift in Sources */,
+				443DBF5C217310DD00751E95 /* CProfileParsar.swift in Sources */,
+				443DBF4C21730A6500751E95 /* SessionNetworkController.swift in Sources */,
+				443DBF5221730B8700751E95 /* NetworkControllable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

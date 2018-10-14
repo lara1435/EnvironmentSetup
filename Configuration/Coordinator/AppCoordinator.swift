@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 public class AppCoordinator: Coordinator {
-    fileprivate var isLoggedIn = false
+    fileprivate var isLoggedIn = true
     fileprivate let navigationController:UINavigationController
     
     init(with navigationController: UINavigationController) {
